@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nhóm 10 NMCNPM </title>
+    <link rel="stylesheet" href="./login-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <div id="login-tab">
+        <header>
+            <nav class="navbar section-content">
+                <div class="nav-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.98 131.03" class="nav-logo-img">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    font-size: 20px;
+                                    font-family: Montserrat-Bold, Montserrat Bold;
+                                    font-weight: 700;
+                                }
+
+                                .cls-1,
+                                .cls-6 {
+                                    fill: #39a0ed;
+                                }
+
+                                .cls-2 {
+                                    letter-spacing: -0.02em;
+                                }
+
+                                .cls-3,
+                                .cls-4 {
+                                    fill: #e4572e;
+                                }
+
+                                .cls-3 {
+                                    letter-spacing: -0.02em;
+                                }
+
+                                .cls-5 {
+                                    fill: #64b0e3;
+                                }
+
+                                .cls-7 {
+                                    fill: #f7b32b;
+                                }
+
+                                .cls-8 {
+                                    fill: #13c4a3;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="OBJECTS"><text class="cls-1" transform="translate(44.86 126.03)">P<tspan
+                                        class="cls-2" x="10.64" y="0">K</tspan>
+                                    <tspan class="cls-3" x="21.14" y="0">C</tspan>
+                                    <tspan class="cls-4" x="32.32" y="0">ODE</tspan>
+                                </text>
+                                <path class="cls-5"
+                                    d="M10.27,47.74c3.2,1.09,4.69,3.19,4.69,8.18V80.55c0,5.09,2.4,8,7.58,8h2.7v5.88H21.55c-9,0-13.67-4.39-13.67-13.27V55.82c0-3.6-1.6-5.09-4.49-5.09H0v-6H3.39c2.89,0,4.49-1.49,4.49-5.09V14.32c0-8.88,4.69-13.27,13.67-13.27h3.69V6.93h-2.7c-5.18,0-7.58,2.9-7.58,8V39.55C15,44.54,13.47,46.64,10.27,47.74Z" />
+                                <path class="cls-5"
+                                    d="M159,44.74v6h-3.39c-2.79,0-4.49,1.49-4.49,5.09V81.15c0,8.88-4.69,13.27-13.56,13.27h-3.8V88.54h2.7c5.19,0,7.58-2.9,7.58-8V55.92c0-5,1.5-7.09,4.69-8.18-3.19-1.1-4.69-3.2-4.69-8.19V14.92c0-5.09-2.39-8-7.58-8h-2.7V1.05h3.8c8.87,0,13.56,4.39,13.56,13.27V39.65c0,3.6,1.7,5.09,4.49,5.09Z" />
+                                <rect class="cls-4" x="96.36" y="4.48" width="19.32" height="16.34" rx="3.53" />
+                                <rect class="cls-4" x="80.78" y="79.13" width="19.32" height="16.34" rx="3.53" />
+                                <rect class="cls-6" x="42.5" y="59.25" width="19.32" height="16.34" rx="3.53" />
+                                <rect class="cls-7" x="68.09" y="31.47" width="14.3" height="12.1" rx="2.61" />
+                                <rect class="cls-8" x="85.64" y="53.42" width="7.15" height="6.05" rx="1.31" />
+                                <rect class="cls-7" x="112.91" y="67.43" width="7.15" height="6.05" rx="1.31" />
+                                <rect class="cls-8" x="31.78" y="43.57" width="7.15" height="6.05" rx="1.31" />
+                                <rect class="cls-6" x="64.51" width="7.15" height="6.05" rx="1.31" />
+                                <rect class="cls-6" x="112.91" y="44.34" width="14.3" height="12.1" rx="2.61" />
+                                <rect class="cls-4" x="35.35" y="17.62" width="14.3" height="12.1" rx="2.61" />
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="logo-text"> Hồng Nguỵn Pi Kay</span>
+                </div>
+
+                <ul class="nav-menu">
+                    <button id="menu-close-button" class="fas fa-times"> </button>
+
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link" data-target="login-main-section"> Trang chủ </a> -->
+                        <button class="nav-link" data-target="hero-section"> Trang chủ </button>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link" data-target="about-section"> Giới thiệu </a> -->
+                        <button class="nav-link" data-target="about-section"> Giới thiệu </button>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link" data-target="testimonials-section"> Thành viên </a> -->
+                        <button class="nav-link" data-target="testimonials-section"> Thành viên </button>
+                    </li>
+                </ul>
+                <button id="menu-open-button" class="fas fa-bars"> </button>
+            </nav>
+        </header>
+        <div class="login-container">
+            <div class="login-modal">
+                <form action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#001d3d" class="login-close-icon">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                    <h2> Đăng nhập </h2>
+                    <div class="input-box">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000814">
+                                <path
+                                    d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                            </svg>
+                        </span>
+                        <input type="text" class="login-user-name" required>
+                        <label> Tài khoản </label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000814">
+                                <path
+                                    d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
+                            </svg>
+                        </span>
+                        <input type="password" class="login-password" required>
+                        <label> Mật khẩu </label>
+                    </div>
+                    <div class="remember-forgot">
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            Lưu tài khoản
+                        </div>
+                        <a href="#"> Quên mật khẩu? </a>
+                    </div>
+                    <button type="submit" class="form-login-button"> Đăng nhập </button>
+                    <div class="register-link register-button">
+                        <p> Không có tài khoản?
+                            <a href="#"> Đăng ký ngay </a>
+                        </p>
+                    </div>
+                    <div class="login-with">
+                        <p> Đăng nhập khác </p>
+                        <div class="login-with-icons">
+                            <img src="/images/facebook logo.png" alt="Facebook">
+                            <img src="/images/google logo.png" alt="Google">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="register-container">
+            <div class="register-modal">
+                <form action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#001d3d" class="register-close-icon">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                    <h2> Đăng ký tài khoản </h2>
+                    <div class="input-box">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000814">
+                                <path
+                                    d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                            </svg>
+                        </span>
+                        <input type="text" class="register-user-name" required>
+                        <label> Tài khoản </label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000814">
+                                <path
+                                    d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
+                            </svg>
+                        </span>
+                        <input type="password" class="register-password" required>
+                        <label> Mật khẩu </label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000814">
+                                <path
+                                    d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
+                            </svg>
+                        </span>
+                        <input type="password" class="register-repeat-password" required>
+                        <label class="password-label"> Nhập lại mật khẩu </label>
+                    </div>
+                    <button type="submit" class="form-register-button"> Đăng ký </button>
+                    <div class="login-link">
+                        <p> Đã có tài khoản?
+                            <a href="#" class="login-button"> Đăng nhập ngay </a>
+                        </p>
+                    </div>
+                    <div class="login-with">
+                        <p> Đăng nhập khác </p>
+                        <div class="login-with-icons">
+                            <img src="/images/facebook logo.png" alt="Facebook">
+                            <img src="/images/google logo.png" alt="Google">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <main id="login-main-section">
+            <section class="hero-section" id="hero-section">
+                <div class="section-content">
+                    <div class="hero-details">
+                        <h2 class="title"> Wép xai nhà làm </h2>
+                        <h3 class="subtitle"> Make beautiful day </h3>
+                        <p class="description"> Welcome to our paradise, let's play </p>
+                        <div class="buttons">
+                            <a href="#" class="button login-button"> Đăng nhập </a>
+                            <a href="#" class="button register-button"> Đăng ký </a>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <img src="/images/building.png" alt="" class="hero-image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section" id="about-section">
+                <div class="section-content">
+                    <div class="about-image-wrapper">
+                        <img src="/images/about-image.jpg" alt="About" class="about-image">
+                    </div>
+                    <div class="about-details">
+                        <h2 class="section-title"> Giới thiệu </h2>
+                        <p class="text"> Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Necessitatibus sunt cumque, fugit dolorum veniam quibusdam
+                            quidem
+                            illum. Nam expedita quibusdam, dicta cumque
+                            eaque quasi molestias quaerat repellendus nesciunt soluta quia!</p>
+                        <div class="social-link-list">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="testimonials-section" id="testimonials-section">
+                <h2 class="section-title"> THÀNH VIÊN NHÓM </h2>
+                <div class="section-content">
+                    <div class="section-container swiper">
+                        <div class="slide-wrapper">
+                            <ul class="testimonials-list swiper-wrapper">
+                                <li class="testimonial swiper-slide">
+                                    <img src=" /images/user-1.jpg" alt="User" class="user-image">
+                                    <h3 class="name"> Nguyễn Văn Minh Hồng </h3>
+                                    <i class="MSSV"> 20224856 </i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src=" /images/user-2.jpg" alt="User" class="user-image">
+                                    <h3 class="name"> Cao Thị Ngọc Huyền </h3>
+                                    <i class="MSSV"> 20225105 </i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src=" /images/user-3.jpg" alt="User" class="user-image">
+                                    <h3 class="name"> Đặng Thị Hòa </h3>
+                                    <i class="MSSV"> 20224985 </i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src=" /images/user-4.jpg" alt="User" class="user-image">
+                                    <h3 class="name"> Bùi Xuân Tùng </h3>
+                                    <i class="MSSV"> 20224905 </i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="/images/user-5.jpg" alt="User" class="user-image">
+                                    <h3 class="name"> Tô Huy Thế Anh </h3>
+                                    <i class="MSSV"> 20224825 </i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="/images/user-6.jpg" alt="User" class="user-image">
+                                    <h3 class="name"> Thái Đức Nam </h3>
+                                    <i class="MSSV"> 20225053 </i>
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./login-js.js"></script>
+</body>
+
+</html>

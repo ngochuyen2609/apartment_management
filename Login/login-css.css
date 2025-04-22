@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #023047;
+    --secondary-color: #48cae4;
+    --light-pink-color: #faf4f5;
+    --medium-gray-color: #ccc;
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --size-max-width: 1300px;
+}
+
+/* styling for whole site */
+
+#login-tab ul {
+    list-style: none;
+}
+
+#login-tab a {
+    text-decoration: none;
+}
+
+#login-tab button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+#login-tab .section-content {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: var(--size-max-width);
+}
+
+#login-tab img {
+    width: 100%;
+}
+
+#login-tab .section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+
+#login-tab .section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    align-items: center;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+/* navbar styling */
+#login-tab header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primary-color);
+}
+
+#login-tab .navbar .nav-logo-img {
+    width: 70px;
+}
+
+#login-tab .navbar .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#login-tab .navbar .nav-logo .logo-text {
+    color: var(--white-color);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+#login-tab header .navbar {
+    display: flex;
+    padding: 20px 20px 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#login-tab .navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#login-tab .navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+#login-tab .navbar .nav-menu .nav-link:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+#login-tab .navbar :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
+
+
+/* hero section styling */
+#login-tab .hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+#login-tab .hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+#login-tab .hero-section .hero-details {
+    width: 450px;
+    padding-left: 30px;
+}
+
+#login-tab .hero-section .hero-details .title {
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: sans-serif;
+}
+
+#login-tab .hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+#login-tab .hero-section .hero-details .description {
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+}
+
+
+#login-tab .hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px;
+}
+
+#login-tab .hero-section .hero-details .button {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3s ease;
+}
+
+#login-tab .hero-section .hero-details .button:hover,
+#login-tab .hero-section .hero-details .register-button {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+#login-tab .hero-section .hero-details .register-button:hover {
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+#login-tab .hero-section .hero-image-wrapper {
+    margin-top: 98px;
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+/* about section styling */
+#login-tab .about-section {
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+#login-tab .about-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#login-tab .about-section .about-image-wrapper .about-image {
+    width: 400px;
+    height: 400px;
+    border-radius: var(--border-radius-circle);
+}
+
+#login-tab .about-section .about-details .section-title {
+    padding: 0;
+}
+
+#login-tab .about-section .about-details {
+    max-width: 50%;
+}
+
+#login-tab .about-section .about-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+#login-tab .about-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+#login-tab .about-section .social-link-list .social-link {
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    transition: 0.2s ease;
+}
+
+#login-tab .about-section .social-link-list .social-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Menu section styling */
+#login-tab .menu-section {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    padding: 50px 0 100px;
+}
+
+#login-tab .menu-section .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#login-tab .menu-section .menu-list .menu-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100%/3 - 110px);
+}
+
+#login-tab .menu-section .menu-list .menu-item .menu-image {
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+#login-tab .menu-section .menu-list .menu-item .name {
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+#login-tab .menu-section .menu-list .menu-item .text {
+    font-size: var(--font-size-m);
+}
+
+/* Testimonials section styling */
+#login-tab .testimonials-section {
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+}
+
+#login-tab .testimonials-section .slide-wrapper {
+    overflow: hidden;
+    padding: 0px 60 50px;
+    background: var(--light-pink-color);
+}
+
+#login-tab .testimonials-section .testimonial {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-tab .testimonials-section .testimonial .user-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+    margin-bottom: 50px;
+}
+
+#login-tab .testimonials-section .testimonial .name {
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+
+#login-tab .testimonials-section .testimonial .feedback {
+    line-height: 25px;
+}
+
+#login-tab .testimonials-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+}
+
+#login-tab .testimonials-section .swiper-slide-button {
+    margin-top: -50px;
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+}
+
+#login-tab .testimonials-section .swiper-slide-button:hover {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:1024px) {
+    #login-tab .menu-section .menu-list {
+        gap: 60px;
+    }
+
+    #login-tab .menu-section .menu-list .menu-item {
+        width: calc(100%/3 - 60px);
+    }
+}
+
+@media screen and (max-width:900px) {
+    :root {
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    #login-tab body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    #login-tab .navbar :where(#menu-close-button, #menu-open-button) {
+        display: block;
+        font-size: var(--font-size-l);
+    }
+
+    #login-tab .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    #login-tab .navbar #menu-open-button {
+        color: var(--white-color);
+    }
+
+    #login-tab .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: var(--white-color);
+        transition: left 0.2s ease;
+    }
+
+    #login-tab body.show-mobile-menu .navbar .nav-menu {
+        left: 0;
+    }
+
+    #login-tab .navbar .nav-menu .nav-link {
+        color: var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
+
+    #login-tab .hero-section .section-content {
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #login-tab .hero-section .hero-details :is(.subtitle, .description),
+    #login-tab .about-section .about-details {
+        max-width: 100%;
+    }
+
+    #login-tab .hero-section .hero-details .buttons {
+        justify-content: center;
+    }
+
+    #login-tab .hero-section .hero-image-wrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
+
+    #login-tab .about-section .section-content {
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    #login-tab .about-section .about-image-wrapper .about-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+    #login-tab .menu-section .menu-list {
+        gap: 30px;
+    }
+
+    #login-tab .menu-section .menu-list .menu-item {
+        width: calc(100%/3 - 30px);
+    }
+
+    #login-tab .menu-section .menu-list .menu-item .menu-image {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #login-tab .menu-section .menu-list {
+        gap: 60px;
+    }
+
+    #login-tab .menu-section .menu-list .menu-item {
+        width: 100%;
+    }
+
+    #login-tab .testimonials-section .slide-wrapper {
+        margin: 0 0 30px;
+    }
+
+    #login-tab .testimonials-section .swiper-slide-button {
+        display: none;
+    }
+}
+
+/* login modal */
+#login-tab .login-container,
+#login-tab .register-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 50;
+}
+
+#login-tab .login-modal-open,
+#login-tab .register-modal-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#login-tab .login-modal,
+#login-tab .register-modal {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    height: auto;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#login-tab form {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#login-tab .login-modal h2,
+#login-tab .register-modal h2 {
+    font-size: 2rem;
+    font-weight: 650;
+    color: #003566;
+    text-align: center;
+}
+
+#login-tab .login-close-icon,
+#login-tab .register-close-icon {
+    margin-left: 285px;
+    cursor: pointer;
+}
+
+#login-tab .login-modal .input-box,
+#login-tab .register-modal .input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #000814;
+}
+
+#login-tab .login-modal .input-box label,
+#login-tab .register-modal .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 34px;
+    transform: translate(-50%);
+    font-size: 1rem;
+    color: #03045e;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#login-tab .register-modal .input-box .password-label {
+    left: 66px;
+}
+
+#login-tab .login-modal .input-box input:focus~label,
+#login-tab .login-modal .input-box input:valid~label,
+#login-tab .register-modal .input-box input:focus~label,
+#login-tab .register-modal .input-box input:valid~label {
+    top: -5px;
+}
+
+#login-tab .login-modal .input-box input,
+#login-tab .register-modal .input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px 35px 0 5px;
+    color: #274c77;
+}
+
+#login-tab .login-modal .input-box .icon,
+#login-tab .register-modal .input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #001d3d;
+    font-size: 1.2rem;
+    line-height: 57px;
+}
+
+#login-tab .remember-forgot {
+    margin: -15px 0 15px;
+    font-size: 0.9rem;
+    color: #03045e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-tab .remember-forgot .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#login-tab .remember-forgot label input {
+    margin-right: 3px;
+}
+
+#login-tab .remember-forgot a {
+    color: #03045e;
+}
+
+#login-tab .remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+#login-tab .login-modal button,
+#login-tab .register-modal button {
+    width: 100%;
+    height: 40px;
+    background: #0077b6;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+#login-tab .register-link,
+#login-tab .login-link {
+    font-size: 1rem;
+    color: #023e8a;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+#login-tab .register-link p a,
+#login-tab .login-link p a {
+    font-weight: 600;
+}
+
+#login-tab .register-link p a:hover,
+#login-tab .login-link p a:hover {
+    text-decoration: underline;
+}
+
+#login-tab .login-with {
+    display: block;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#login-tab .login-with p {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+#login-tab .login-with-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 110px;
+}
+
+#login-tab .login-with img {
+    width: 30px;
+    cursor: pointer;
+}
