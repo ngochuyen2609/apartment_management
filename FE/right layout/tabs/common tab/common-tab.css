@@ -1,0 +1,239 @@
+#common-tab {
+    margin-left: 231px;
+    margin-top: 60.8px;
+    width: calc(100vw - 231px);
+    height: calc(100vh - 60.8px);
+    background-color: #f7f9f9;
+    /* display: none; */
+}
+
+#common-tab .common-tab-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* create button */
+#common-tab .common-tab-button {
+    padding: 40px 70px 0px 0px;
+    margin-right: 0px;
+}
+
+#common-tab .common-tab-create-btn {
+    padding: 10px 20px;
+    background-color: #5390d9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* charge section */
+#common-tab .charge-header {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 20px 0px 0px 40px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#common-tab .charge-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    gap: 40px;
+}
+
+#common-tab .charge-item {
+    min-width: 160px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fefcfb;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* #common-tab .charge-item-num {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #669bbc;
+    color: #fff;
+    border-radius: 3px;
+} */
+
+#common-tab .charge-item-text {
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+#common-tab .charge-item-icon {
+    cursor: pointer;
+}
+
+/* common modal */
+#common-tab .text-active {
+    color: #001233;
+}
+
+#common-tab .common-modal-container,
+#common-tab .edit-common-modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 30;
+}
+
+#common-tab .common-modal-open,
+#common-tab .edit-common-modal-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#common-tab .common-modal-container .common-modal,
+#common-tab .edit-common-modal-container .edit-common-modal {
+    background: #fff;
+    width: 700px;
+    max-width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+#common-tab .common-modal-title,
+#common-tab .edit-common-modal-title {
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    color: #5e60ce;
+}
+
+/* modal button styles */
+#common-tab .common-modal-footer,
+#common-tab .edit-common-modal-footer {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#common-tab .common-modal-container .common-modal-close-button,
+#common-tab .edit-common-modal-container .edit-common-modal-close-button {
+
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f72585;
+    margin-right: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#common-tab .common-modal-save-button,
+#common-tab .edit-common-modal-save-button {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #5390d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* modal input */
+#common-tab .common-modal-input,
+#common-tab .edit-common-modal-input {
+    display: block;
+}
+
+#common-tab .common-modal-container .common-modal .input-item,
+#common-tab .edit-common-modal-container .edit-common-modal .input-item {
+
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #03045e;
+}
+
+#common-tab .common-modal-container .common-modal .input-item input,
+#common-tab .edit-common-modal-container .edit-common-modal .input-item input {
+    width: 100%;
+    height: 25px;
+    border-radius: 4px;
+    padding-left: 8px;
+    border: 1px solid #5390d9;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#common-tab .common-modal-type-body-title,
+#common-tab .edit-common-modal-type-body-title {
+    font-size: 1.1rem;
+    color: #03045e;
+}
+
+/* type list options */
+#common-tab .common-modal-input,
+#common-tab .edit-common-modal-input {
+    position: relative;
+    padding-top: 5px;
+    margin-bottom: 11px;
+}
+
+#common-tab .common-modal-type-body,
+#common-tab .edit-common-modal-type-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid #5390d9;
+    font-size: 1rem;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    color: #adb5bd;
+    background-color: #fff;
+}
+
+#common-tab .common-type-list,
+#common-tab .edit-common-type-list {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#common-tab .common-modal-type:hover .common-type-list:not(.hidden),
+#common-tab .edit-common-modal-type:hover .edit-common-type-list:not(.hidden) {
+    display: block;
+}
+
+#common-tab .common-type-list-item,
+#common-tab .edit-common-type-list-item {
+    font-size: 1.1rem;
+    padding: 4px 14px;
+    display: block;
+    cursor: pointer;
+}
+
+#common-tab .common-type-list-item:hover,
+#common-tab .edit-common-type-list-item:hover {
+    color: #5390d9;
+}

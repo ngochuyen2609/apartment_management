@@ -1,0 +1,402 @@
+#resident-tab {
+    margin-left: 231px;
+    margin-top: 60.8px;
+    width: calc(100vw - 231px);
+    height: calc(100vh - 60.8px);
+    background-color: #f7f9f9;
+    display: none;
+}
+
+#resident-tab input {
+    outline: none;
+}
+
+/* button */
+
+#resident-tab .resident-tab-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 70px;
+    padding-top: 40px;
+}
+
+#resident-tab .resident-tab-button {
+    display: flex;
+    gap: 20px;
+}
+
+
+#resident-tab .resident-tab-btn {
+    padding: 10px 20px;
+    background-color: #979dac;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* create button */
+#resident-tab .resident-tab-create-btn {
+    background-color: #5390d9;
+}
+
+/* search */
+#resident-tab .resident-tab-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+#resident-tab .resident-tab-search input {
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+#resident-tab .resident-tab-search-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* modal */
+#resident-tab .create-resident-modal-container,
+#resident-tab .resident-tmp-regis-modal-comtainer,
+#resident-tab .resident-tmp-absence-modal-comtainer,
+#resident-tab .resident-death-modal-container,
+#resident-tab .edit-resident-modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 30;
+}
+
+#resident-tab .create-resident-modal-open,
+#resident-tab .resident-tmp-regis-modal-open,
+#resident-tab .resident-tmp-absence-modal-open,
+#resident-tab .resident-death-modal-open,
+#resident-tab .edit-resident-modal-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#resident-tab .create-resident-modal,
+#resident-tab .resident-tmp-regis-modal,
+#resident-tab .resident-tmp-absence-modal,
+#resident-tab .resident-death-modal,
+#resident-tab .edit-resident-modal {
+    background: #fff;
+    width: 800px;
+    max-width: 100%;
+    max-height: 550px;
+    overflow: auto;
+    scrollbar-width: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+#resident-tab .resident-tmp-regis-modal,
+#resident-tab .resident-tmp-absence-modal {
+    width: 400px;
+}
+
+#resident-tab .resident-death-modal {
+    width: 470px;
+}
+
+#resident-tab .resident-regis-input-colum-fill-item input,
+#resident-tab .resident-absence-input-colum-fill-item input {
+    width: 210px;
+}
+
+#resident-tab .create-resident-modal-title,
+#resident-tab .resident-tmp-regis-modal-title,
+#resident-tab .resident-tmp-absence-modal-title,
+#resident-tab .resident-death-modal-title,
+#resident-tab .edit-resident-modal-title {
+    font-size: 30px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    color: #5e60ce;
+}
+
+#resident-tab .create-resident-modal-footer,
+#resident-tab .resident-tmp-regis-modal-footer,
+#resident-tab .resident-tmp-absence-modal-footer,
+#resident-tab .resident-death-modal-footer,
+#resident-tab .edit-resident-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#resident-tab .create-resident-modal-close-button,
+#resident-tab .resident-tmp-regis-modal-close-button,
+#resident-tab .resident-tmp-absence-modal-close-button,
+#resident-tab .resident-death-modal-close-button,
+#resident-tab .edit-resident-modal-close-button {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f72585;
+    margin-right: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#resident-tab .create-resident-modal-save-button,
+#resident-tab .resident-tmp-regis-modal-save-button,
+#resident-tab .resident-tmp-absence-modal-save-button,
+#resident-tab .resident-death-modal-save-button,
+#resident-tab .edit-resident-modal-save-button {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #5390d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#resident-tab .create-resident-modal-input,
+#resident-tab .resident-tmp-regis-modal-input,
+#resident-tab .resident-tmp-absence-modal-input,
+#resident-tab .resident-death-modal-input-body-1,
+#resident-tab .resident-death-modal-input-body-2,
+#resident-tab .edit-resident-modal-input {
+    display: flex;
+    gap: 30px;
+}
+
+#resident-tab .resident-death-modal-input-body-2 {
+    gap: 75px;
+}
+
+#resident-tab .create-resident-modal-input .resident-input-colum:nth-child(2) {
+    padding-right: 60px;
+}
+
+#resident-tab .resident-input-colum-text {
+    display: block;
+    font-size: 1.1rem;
+}
+
+#resident-tab .resident-input-colum-text-item {
+    margin-bottom: 10px;
+}
+
+#resident-tab .resident-death-modal-input-body-2 .resident-input-colum-text .resident-death-live-input {
+    margin-bottom: 19px;
+}
+
+#resident-tab .resident-death-modal-input-body-2 .resident-input-colum-text .resident-input-colum-text-item:not(.resident-death-live-input) {
+    margin-bottom: 11px;
+}
+
+#resident-tab .resident-input-colum-fill {
+    display: block;
+    font-size: 1.1rem;
+}
+
+#resident-tab .resident-input-colum-fill input {
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+#resident-tab .resident-input-colum-fill .dob,
+#resident-tab .resident-death-modal-input-body-2 .resident-input-colum-fill input {
+    min-width: 163px;
+}
+
+#resident-tab .resident-tmp-regis-reason-input textarea,
+#resident-tab .resident-tmp-absence-reason-input textarea {
+    width: 210px;
+    height: 80px;
+    display: flex;
+    padding: 5px;
+    outline: none;
+}
+
+/* list in modal */
+#resident-tab .resident-input-sex,
+#resident-tab .resident-input-apartment-role,
+#resident-tab .resident-death-sex-input {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 11px;
+}
+
+#resident-tab .resident-input-apartment-role,
+.resident-input-sex {
+    display: flex;
+    gap: 5px;
+}
+
+#resident-tab .resident-input-sex .resident-input-sex-body,
+#resident-tab .resident-input-apartment-role .resident-input-apartment-role-body,
+#resident-tab .resident-death-sex-input .resident-death-sex-input-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 164px;
+    height: 17px;
+    padding: 3px;
+    font-size: 0.9rem;
+    color: #adb5bd;
+    background-color: #fff;
+    border: 1px solid #343a40;
+}
+
+#resident-tab .resident-input-sex-list,
+#resident-tab .resident-input-apartment-role-list,
+#resident-tab .resident-input-death-sex-list {
+    position: absolute;
+    width: 100%;
+    top: 29px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#resident-tab .resident-input-sex:hover .resident-input-sex-list:not(.hidden),
+#resident-tab .resident-input-apartment-role:hover .resident-input-apartment-role-list:not(.hidden),
+#resident-tab .resident-death-sex-input:hover .resident-input-death-sex-list:not(.hidden) {
+    display: block;
+}
+
+#resident-tab .resident-input-sex-list-item,
+#resident-tab .resident-input-apartment-role-list-item,
+#resident-tab .resident-input-death-sex-list-item {
+    font-size: 1.1rem;
+    padding: 3px 8px;
+    display: block;
+    cursor: pointer;
+}
+
+#resident-tab .resident-input-sex-list-item:hover,
+#resident-tab .resident-input-apartment-role-list-item:hover,
+#resident-tab .resident-input-death-sex-list-item:hover {
+    color: #5390d9;
+}
+
+#resident-tab .resident-death-modal-input-body-text {
+    padding: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #023047;
+}
+
+#resident-tab .resident-input-sex-text,
+#resident-tab .resident-input-apartment-role-text {
+    color: #001233;
+}
+
+/* resident body */
+#resident-tab .resident-tab-body {
+    margin: 40px 40px;
+}
+
+/* Table */
+
+#resident-tab table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 95%;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#resident-tab tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+#resident-tab table .table-row {
+    background-color: #fff;
+}
+
+#resident-tab table .table-row:hover {
+    background: #f5f5f5;
+    transform: scale(1.02);
+}
+
+#resident-tab table .table-row-hide {
+    display: none;
+}
+
+#resident-tab td,
+th {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#resident-tab .table-header {
+    background: #5e60ce;
+    color: #fff;
+}
+
+#resident-tab .table-icons .table-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#resident-tab .table-icons .table-icon:hover {
+    fill: #5e60ce;
+}
+
+#resident-tab .resident-statistical-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 70px;
+}
+
+#resident-tab .resident-statistical-item-content {
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 5px 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+#resident-tab .resident-statistical-item {
+    display: block;
+    text-align: center;
+}
+
+#resident-tab .resident-statistical-item-title {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+#resident-tab .resident-statistical-item-number input {
+    margin: 12px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#resident-tab .resident-statistical-item:nth-child(3) .resident-statistical-item-number {
+    color: #f72585;
+}
+
+#resident-tab .resident-statistical-item-footer {
+    font-size: 1rem;
+    padding: 5px 10px;
+}
